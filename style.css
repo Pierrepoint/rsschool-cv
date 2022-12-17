@@ -1,1 +1,76 @@
-'rsschool cv style'
+@font-face {
+    font-family: Oxygen-Bold;
+    src: url(font/Oxygen-Bold.ttf) format('truetype');
+}
+@font-face {
+    font-family: Oxygen-Light;
+    src: url(font/Oxygen-Light.ttf) format('truetype');
+}
+@font-face {
+    font-family: Oxygen-Regular;
+    src: url(font/Oxygen-Regular.ttf) format('truetype');
+}
+html, body {
+margin: 0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+}
+* {
+font-family: Oxygen-Regular;
+} 
+.container {
+    padding-left: 35px;
+    max-width: 700px;
+    margin: auto;
+}
+header {
+box-sizing: border-box;
+}
+nav {
+    box-sizing: border-box;
+    display: inline-block;
+}
+nav > ul {
+    margin: 0;
+}
+nav > a:first-child { padding-left: 0}
+a {
+    padding: 0px 13px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+ul a {padding: 0;}
+.myPhoto {
+    width: 400px;
+    display:inline;
+}
+svg {
+    width: 75px;
+}
+svg:hover {
+    fill: #e9967a;
+}
+svg:active {
+    fill: #7b68ee;
+}
+span {
+    padding: 0px 20px;
+}
+a:visited {
+    color: #06004d;
+}
+a:hover {
+    color: #e9967a;
+}
+a:active {
+    color: #7b68ee;
+}
+footer {
+    padding-bottom: 20px;
+}
+footer > a:first-child {
+    padding: 0px;
+}
+.anchorLinks {
+    list-style-type: none;
+}
