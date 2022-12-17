@@ -4,9 +4,143 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>CV</title>
 </head>
 <body>
+    <main>
+        <header>
+            <h1>Andrey Drapeza</h1>
+        </header>
+        <nav>
+            <a>About me</a> <a>Skills</a> <a>Strengths</a> <a>Code</a> <a>Contact</a> <a>Education</a> <a>Languages spoken</a>
+        </nav>
+        <div>
+            <section>
+                <h2>About me</h2>
+                <p> 
+                    I am a 6th year technical university student. I am 23 years old and currently
+                    obtaining knowledge in the field of advanced developments, as well as obtaining
+                    master's degree from the university. 
+                    I am engaged in self-development, I am fond of reading books and watching movies. 
+                    I take music very seriously. Lead a healthy lifestyle.
+                </p>
+            </section>
+        </div>
+        <div>
+            <section>
+            <h2>Skills</h2>
+                <ul>
+                    <li>Engineering</li>
+                    <li>Driving</li>
+                    <li>DAW</li>
+                    <li>HTML/HTML5</li>
+                    <li>CSS3</li>
+                    <li>GIT</li>
+                    <li>TypeScript basics</li>
+                    <li>JavaScript basics</li>
+                </ul>
+            </section>
+        </div>
+        <div>
+            <section>
+            <h2>Strengths</h2>
+                <ul>
+                    <li>Responsible</li>
+                    <li>Purposeful</li>
+                    <li>Conscientious</li>
+                    <li>Attentive</li>
+                    <li>Capable</li>
+                </ul>
+            </section>
+        </div>
+        <div>
+            <section>
+            <h2>Code</h2>
+            <p>
+            <code>
+                    const onLoaded = () => {<br>
+                        const storeTrackArray = localStorage.getItem("track_array");<br>
+                      <br>
+                        if (storeTrackArray) {<br>
+                          const parsedTrackArray = JSON.parse(storeTrackArray);<br>
+                          parsedTrackArray.forEach(renderItem);<br>
+                          track_array = parsedTrackArray;<br>
+                        }<br>
+                      };<br>
+                      <br>
+                      const removeElement = (name) => {<br>
+                        container.innerHTML = "";<br>
+                        track_array = track_array.filter((elem) => elem.name !== name);<br>
+                        localStorage.setItem("track_array", JSON.stringify(track_array));<br>
+                        track_array.forEach(renderItem);<br>
+                      };<br>
+            </code>
+            </p>
+            </section>
+        </div>
+    </main>
+    <aside>
+        <div>
+            <img src="TbbywYAHGpI.jpg" alt="Photo of Andrey Drapeza">
+        </div>
+        <div>
+            <section>
+            <h2>Contact</h2>
+                <ul>
+                    <li><p>Email:<br>
+                    Drapezoid@gmail.com</p>
+                    </li>
+                    <li><a href="https://github.com/Pierrepoint" target="_blank">Github</a></li>
+                    <li><p>Adress:<br>
+                    Saint-Petersburg, Russia</p></li>
+                    <li><p>Discord:<br>
+                    Pierrepoint#4688</p></li>
+                </ul>
+            </section>
+        </div>
+        <div>
+            <section>
+            <h2>Education</h2>
+                <ul>
+                    <li><p>2006-2010:<br>
+                    Elementary school</p></li>
+                    <li><p>2010-2014:<br>
+                    Gymnasium</p></li>
+                    <li><p>2014-2017:<br>
+                    Regional Lyceum</p></li>
+                    <li><p>2017-2021:<br>
+                    Bachelor's degree in Saint-Petersburg<br>
+                    Electrotechnical University</p></li>
+                    <li><p>2021-2023(in process):<br>
+                    Master's degree in Saint-Petersburg<br>
+                    Electrotechnical University</p></li>
+                    <li><p>2022-2023(in process):<br>
+                    RS School: JS/FE Pre-School</p></li>
+                </ul>
+            </section>
+        </div>
+        <div>
+            <section>
+            <h2>Languages spoken</h2>
+                <ul>
+                    <li><p>English:<br>
+                    B1+ by EFSET</p>
+                    </li>
+                    <li><p>Russian:<br>
+                    Native</p></li>
+                    <li><p>Belarusian:<br>
+                    Intermediate</p></li>
+                </ul>
+            </section>
+        </div>
+    </aside>
+    <footer>
+        <a href="https://github.com/Pierrepoint" target="_blank">Github</a>
+        <h6>©2022 by Andrey Drapeza</h6> 
+        <a href="https://rs.school/js/" target="_blank"><img src="rs_school_js.svg" alt="RS_School_image"></a>
+    </footer>
+
     <script src="js/scripts.js"></script>
 </body>
 </html>
